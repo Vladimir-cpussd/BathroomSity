@@ -21,9 +21,66 @@ body {
     margin: 0;                 
 }
 
+
+
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 50%;
+  }
+  
+  .dropdown-trigger {
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+
+  
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    
+    height: 50px;
+    min-width: 160px;
+    
+    z-index: 14;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 3px 11px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #e69d00;
+  }
+  
+  /* Показываем выпадающий список при наведении */
+  .dropdown-container:hover .dropdown-content {
+    display: block;
+  }
+  
+
+.about-us {
+    color: #ffffff;
+    width: 400px;
+    margin-top: 20px;
+    font-size: 30px;
+    
+    
+}
+
+.numbers {
+    margin-left: 50px;
+}
+
 .header-button {
-    background-color: #FFD700;
-    color: #000;
+    background-color:#e69d00;
+    color: #ffffff;
     padding: 8px 16px;         
     border: none;              
     border-radius: 4px;        
@@ -32,7 +89,7 @@ body {
 }
 
 .header-button:hover {
-    background-color: #ffe555;
+    background-color: #f7a901;
 }
 
 .main {
@@ -74,16 +131,19 @@ body {
 
 
 .information {
-    transform: translateY(100px);
-    padding-top: 50px;
-    margin-left: 200px;
+    transform: translateY(50px);
+    
+    margin-left: 50px;
     color: #ffffff; 
     z-index: 12;
     width: 500px;
-    height: 200px;
+    height: 400px;
+    padding: 10px;
+    line-height: 20px;
     border-radius: 10px;
     border: 1px solid #ffffff;
     position: relative;
+    font-size: 19px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     
 }
@@ -91,14 +151,14 @@ body {
 
 
 .products-scroll-container {
-    width: 500px;
+    width: 1000px;
     overflow-x: hidden; 
     position: relative;
     margin-top: 500px;
     background: rgba(0, 0, 0, 0);
     border-radius: 8px;
     z-index: 11;
-    margin-left: 500px;
+    margin-left: 100px;
   }
   
   .products-scroll-wrapper {
